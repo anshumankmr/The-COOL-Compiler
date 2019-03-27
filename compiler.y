@@ -10,7 +10,18 @@
 
 %% 
 stmt : program NL; #let's stick to using the augmented grammar
-expr : TRUE | FALSE | STRING | INTEGER | ID | OB expr CB |NOT expr | expr EQ | expr LET expr | expr LT expr | COMP expr | expr DIV expr ;
+
+expressplus: expr SCO expressplus | ;
+
+express: COMMA ID COL TYPE OSB ASSIGN expr CSB express|
+	;
+
+
+cases: ID COL TYPE TYPEOF expr SCO cases1;
+
+cases1: ID COL TYPE TYPEOF expr SCO cases1 | ;
+
+expr : TRUE | FALSE | STRING | INTEGER | ID | OB expr CB |NOT expr | expr EQ | expr LET expr | expr LT expr | COMP expr | expr DIV expr | expr MUL expr | expr SUB expr | expr ADD expr | ISVOID expr | NEW TYPE | CASE expr OF OSB cases ESAC| LET ID COL TYPE OSB ASSIGN expr CSB express in expr| OCB expressplus CCB| WHILE expr LOOP expr POOL| IF expr THEN expr ELSE expr FI;
 %%
 
 int yyerror(char *msg)
