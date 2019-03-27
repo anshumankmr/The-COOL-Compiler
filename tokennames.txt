@@ -16,6 +16,7 @@ isvoid, ISVOID
 /, DIV 
 ~, COMP
 <, LT
+= , EQ
 <=, LET
 not, NOT
 id, ID
