@@ -1,0 +1,40 @@
+if, IF
+then, THEN
+else,ELSE 
+fi, FI
+while,WHILE
+loop,LOOP 
+pool,POOL
+in,IN
+case, CASE 
+of, OF 
+=>, TYPEOF
+esac, ESAC
+new, NEW
+isvoid, ISVOID 
+-, SUB
+/, DIV 
+~, COMP
+<, LT
+= , EQ
+<=, LET
+not, NOT
+id, ID
+true, TRUE
+false, FALSE
+:, COL
++, ADD
+class, CLASS
+[ , OSB
+], CSB
+inherits, INHERITS
+{, OCB 
+}, CCB
+(, OB
+), CB
+;, SS
+*, MUL 
+,, COMMA
+<-, ASSIGN
+@, AT 
+., DOT
