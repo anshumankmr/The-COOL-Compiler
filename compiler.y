@@ -10,6 +10,33 @@
 
 %% 
 stmt : program NL; #let's stick to using the augmented grammar
+features: feature; features 
+		|
+		;
+classes: class; classes1
+		;
+classes1: class; classes1
+		|
+		;
+formals: ,formal formals
+		|
+		;
+exprs: ,expr exprs
+		|
+		;
+program: classes
+		;
+class: class TYPE [inherits TYPE] {features}
+		;
+feature: ID ([formal formals]) : TYPE {expr}
+		| ID : TYPE [<- expr]
+		;
+formal: ID:TYPE
+		;
+expr: ID <- expr
+		| expr [@TYPE].ID ([expr exprs])
+		| ID ([expr exprs])
+		;
 
 expressplus: expr SCO expressplus | ;
 
