@@ -6,7 +6,7 @@
 
 %%
 "+" {return ADD;}
-"-" {return MINUS;}
+"-" {return SUB;}
 "*" {return MUL;}
 "/" {return DIV;}
 "`" {return COMP;}
@@ -14,13 +14,11 @@
 "<=" {return LTE;}
 "=" {return EQ;}
 "not" {return NOT;}
-"ID" {return ID;}
 [0-9]+ {return INTEGER;}
 "true" {return TRUE;}
 "false" {return FALSE;}
 "isvoid" {return ISVOID;}
 "new" {return NEW;}
-"TYPE" {return TYPE;}
 "case" {return CASE;}
 "of" {return OF;}
 ":" {return COL;}
@@ -28,9 +26,7 @@
 ";" {return SS;}
 "esac" {return ESAC;}
 "let" {return LET;}
-"[" {return OSB;}
 "<-" {return ASSIGN;}
-"]" {return CSB;}
 "," {return COMMA;}
 "in" {return IN;}
 "{" {return OCB;}
@@ -48,6 +44,9 @@
 "." {return DOT;}
 "class" {return CLASS;}
 "inherits" {return INHERITS;}
+[A-Z][_a-zA-Z0-9]* {return TYPE;}
+[_a-z][_a-zA-Z0-9]* {return ID;}
+\"(.)*\"	{return STRING;}
 
 %%
 
