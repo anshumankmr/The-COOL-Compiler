@@ -34,7 +34,7 @@
 # define YY_YY_COMPILER_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
-# define YYDEBUG 0
+# define YYDEBUG 1
 #endif
 #if YYDEBUG
 extern int yydebug;
@@ -58,38 +58,35 @@ extern int yydebug;
     LT = 268,
     COMP = 269,
     DIV = 270,
-    OSB = 271,
-    CSB = 272,
-    OCB = 273,
-    CCB = 274,
-    SS = 275,
-    COMMA = 276,
-    COL = 277,
-    ASSIGN = 278,
-    AT = 279,
-    DOT = 280,
-    IF = 281,
-    THEN = 282,
-    ELSE = 283,
-    FI = 284,
-    WHILE = 285,
-    LOOP = 286,
-    POOL = 287,
-    IN = 288,
-    CASE = 289,
-    OF = 290,
-    TYPEOF = 291,
-    ESAC = 292,
-    NEW = 293,
-    ISVOID = 294,
-    SUB = 295,
-    ADD = 296,
-    MUL = 297,
-    CLASS = 298,
-    INHERITS = 299,
-    TYPE = 300,
-    ID = 301,
-    NL = 302
+    OCB = 271,
+    CCB = 272,
+    SS = 273,
+    COMMA = 274,
+    COL = 275,
+    ASSIGN = 276,
+    AT = 277,
+    DOT = 278,
+    IF = 279,
+    THEN = 280,
+    ELSE = 281,
+    FI = 282,
+    WHILE = 283,
+    LOOP = 284,
+    POOL = 285,
+    IN = 286,
+    CASE = 287,
+    OF = 288,
+    TYPEOF = 289,
+    ESAC = 290,
+    NEW = 291,
+    ISVOID = 292,
+    SUB = 293,
+    ADD = 294,
+    MUL = 295,
+    CLASS = 296,
+    INHERITS = 297,
+    TYPE = 298,
+    ID = 299
   };
 #endif
 
