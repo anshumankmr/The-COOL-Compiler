@@ -506,7 +506,7 @@ char *yytext;
 #line 2 "lex.l"
 	#include<stdio.h>
 	#include<stdlib.h>
-	#include "COOL_Compiler.tab.h"
+	#include "compiler.tab.h"
 #line 511 "lex.yy.c"
 #line 512 "lex.yy.c"
 

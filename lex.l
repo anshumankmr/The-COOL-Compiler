@@ -1,7 +1,7 @@
 %{
 	#include<stdio.h>
 	#include<stdlib.h>
-	#include "COOL_Compiler.tab.h"
+	#include "compiler.tab.h"
 %}
 
 %%
