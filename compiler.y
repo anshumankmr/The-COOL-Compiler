@@ -30,9 +30,10 @@ class: CLASS TYPE INHERITS TYPE OCB features CCB
 		|
 		CLASS TYPE OCB features CCB 
 		;
-feature: ID OB formal formals CB COL TYPE OCB expr CCB
+feature:  ID OB formal formals CB COL TYPE OCB expr 		  CCB
 		| ID OB CB COL TYPE OCB expr CCB
 		| ID COL TYPE ASSIGN expr
+		| ID COL TYPE 
 		;
 formal: ID COL TYPE
 		;
@@ -47,7 +48,37 @@ cases: ID COL TYPE TYPEOF expr SS cases1;
 
 cases1: ID COL TYPE TYPEOF expr SS cases1 | ;
 
-expr : TRUE | FALSE | STRING | INTEGER | ID | OB expr CB |NOT expr | expr EQ expr | expr LTE expr | expr LT expr | COMP expr | expr DIV expr | expr MUL expr | expr SUB expr | expr ADD expr | ISVOID expr | NEW TYPE | CASE expr OF cases ESAC| LET ID COL TYPE ASSIGN expr express IN expr| OCB expressplus CCB| WHILE expr LOOP expr POOL| IF expr THEN expr ELSE expr FI | ID ASSIGN expr | expr AT TYPE DOT ID OB expr exprs CB | ID OB expr exprs CB ;
+expr : TRUE 
+	| FALSE 
+	| STRING 
+	| INTEGER 
+	| ID
+	 | OB expr CB 
+	 |NOT expr 
+	 | expr EQ expr 
+	 | expr LTE expr 
+	 | expr LT expr 
+	 | COMP expr 
+	 | expr DIV expr 
+	 | expr MUL expr 
+	 | expr SUB expr 
+	 | expr ADD expr 
+	 | ISVOID expr 
+	 | NEW TYPE 
+	 | CASE expr OF cases ESAC
+	 | LET ID COL TYPE ASSIGN expr express IN expr
+	 | LET ID COL TYPE express IN expr
+	 | OCB expressplus CCB
+	 | WHILE expr LOOP expr POOL
+	 | IF expr THEN expr ELSE expr FI 
+	 | ID ASSIGN expr 
+	 | expr AT TYPE DOT ID OB expr exprs CB 
+	 | expr DOT ID OB expr exprs CB
+	 | expr DOT ID OB CB
+	 | expr AT TYPE DOT ID OB CB
+	 | ID OB expr exprs CB
+	 | ID OB CB
+	  ;
 %%
 
 int yyerror(char *msg)
@@ -61,7 +92,7 @@ void main()
 	#ifdef YYDEBUG
 		yydebug = 1;
 	#endif
-	yyin=fopen("hello_world.cl", "r");
+	yyin=fopen("arith.cl", "r");
 	do 
 	{
 	 if(yyparse())
