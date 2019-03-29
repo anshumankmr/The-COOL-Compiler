@@ -1640,7 +1640,7 @@ void main()
 	#ifdef YYDEBUG
 		yydebug = 1;
 	#endif
-	yyin=fopen("arith.cl", "r");
+	yyin=fopen("SampleInput.txt", "r");
 	do 
 	{
 	 if(yyparse())
