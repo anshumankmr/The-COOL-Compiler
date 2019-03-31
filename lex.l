@@ -5,11 +5,14 @@
 %}
 
 %%
+\(\*(.*\n)*.*\*\) {};
+\-\-(.*) {};
+
 "+" {return ADD;}
 "-" {return SUB;}
 "*" {return MUL;}
 "/" {return DIV;}
-"`" {return COMP;}
+"~" {return COMP;}
 "<" {return LT;}
 "<=" {return LTE;}
 "=" {return EQ;}
@@ -45,9 +48,8 @@
 "class" {return CLASS;}
 "inherits" {return INHERITS;}
 [A-Z][_a-zA-Z0-9]* {return TYPE;}
-[_a-z][_a-zA-Z0-9]* {return ID;}
+[_a-z][_a-zA-Z0-9]* {printf("%s -- ", yytext); return ID;}
 \"(.)*\"	{return STRING;}
-
 %%
 
 
