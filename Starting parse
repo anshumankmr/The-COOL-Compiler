@@ -1,0 +1,1973 @@
+Starting parse
+Entering state 0
+Reading a token: 
+Next token is token CLASS ()
+Shifting token CLASS ()
+Entering state 1
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 6
+Reading a token: Next token is token INHERITS ()
+Shifting token INHERITS ()
+Entering state 10
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 16
+Reading a token: Next token is token OCB ()
+Shifting token OCB ()
+Entering state 22
+Reading a token:     
+
+Next token is token ID ()
+Shifting token ID ()
+Entering state 13
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 18
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 25
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 31
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 37
+Reducing stack by rule 17 (line 37):
+   $1 = token ID ()
+   $2 = token COL ()
+   $3 = token TYPE ()
+-> $$ = nterm formal ()
+Stack now 0 1 6 10 16 22 13 18
+Entering state 26
+Reading a token: Next token is token CB ()
+Reducing stack by rule 8 (line 22):
+-> $$ = nterm formals ()
+Stack now 0 1 6 10 16 22 13 18 26
+Entering state 33
+Next token is token CB ()
+Shifting token CB ()
+Entering state 39
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 58
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 82
+Reading a token: Next token is token OCB ()
+Shifting token OCB ()
+Entering state 103
+Reading a token:          
+Next token is token OCB ()
+Shifting token OCB ()
+Entering state 48
+Reading a token:         
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token ASSIGN ()
+Shifting token ASSIGN ()
+Entering state 71
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token SS ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 13 18 26 33 39 58 82 103 48 54 71
+Entering state 92
+Next token is token SS ()
+Reducing stack by rule 48 (line 73):
+   $1 = token ID ()
+   $2 = token ASSIGN ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 13 18 26 33 39 58 82 103 48
+Entering state 64
+Next token is token SS ()
+Shifting token SS ()
+Entering state 86
+Reading a token:               
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token SS ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 13 18 26 33 39 58 82 103 48 64 86
+Entering state 64
+Next token is token SS ()
+Shifting token SS ()
+Entering state 86
+Reading a token:             
+Next token is token CCB ()
+Reducing stack by rule 19 (line 40):
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 13 18 26 33 39 58 82 103 48 64 86 64 86
+Entering state 105
+Reducing stack by rule 18 (line 40):
+   $1 = nterm expr ()
+   $2 = token SS ()
+   $3 = nterm expressplus ()
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 13 18 26 33 39 58 82 103 48 64 86
+Entering state 105
+Reducing stack by rule 18 (line 40):
+   $1 = nterm expr ()
+   $2 = token SS ()
+   $3 = nterm expressplus ()
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 13 18 26 33 39 58 82 103 48
+Entering state 63
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 85
+Reducing stack by rule 45 (line 70):
+   $1 = token OCB ()
+   $2 = nterm expressplus ()
+   $3 = token CCB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 13 18 26 33 39 58 82 103
+Entering state 114
+Reading a token:         
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 127
+Reducing stack by rule 14 (line 33):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm formal ()
+   $4 = nterm formals ()
+   $5 = token CB ()
+   $6 = token COL ()
+   $7 = token TYPE ()
+   $8 = token OCB ()
+   $9 = nterm expr ()
+   $10 = token CCB ()
+-> $$ = nterm feature ()
+Stack now 0 1 6 10 16 22
+Entering state 15
+Reading a token: Next token is token SS ()
+Shifting token SS ()
+Entering state 21
+Reading a token:     
+   
+Next token is token ID ()
+Shifting token ID ()
+Entering state 13
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 18
+Reading a token: Next token is token CB ()
+Shifting token CB ()
+Entering state 24
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 30
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 36
+Reading a token: Next token is token OCB ()
+Shifting token OCB ()
+Entering state 56
+Reading a token:        
+Next token is token OCB ()
+Shifting token OCB ()
+Entering state 48
+Reading a token:         
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 70
+Reading a token: Next token is token STRING ()
+Shifting token STRING ()
+Entering state 42
+Reducing stack by rule 27 (line 52):
+   $1 = token STRING ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 13 18 24 30 36 56 48 54 70
+Entering state 91
+Reading a token: Next token is token CB ()
+Reducing stack by rule 10 (line 25):
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 13 18 24 30 36 56 48 54 70 91
+Entering state 111
+Next token is token CB ()
+Shifting token CB ()
+Entering state 123
+Reducing stack by rule 53 (line 78):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm expr ()
+   $4 = nterm exprs ()
+   $5 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 13 18 24 30 36 56 48
+Entering state 64
+Reading a token: Next token is token SS ()
+Shifting token SS ()
+Entering state 86
+Reading a token:             
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token SS ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 13 18 24 30 36 56 48 64 86
+Entering state 64
+Next token is token SS ()
+Shifting token SS ()
+Entering state 86
+Reading a token:             
+Next token is token CCB ()
+Reducing stack by rule 19 (line 40):
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 15 21 13 18 24 30 36 56 48 64 86 64 86
+Entering state 105
+Reducing stack by rule 18 (line 40):
+   $1 = nterm expr ()
+   $2 = token SS ()
+   $3 = nterm expressplus ()
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 15 21 13 18 24 30 36 56 48 64 86
+Entering state 105
+Reducing stack by rule 18 (line 40):
+   $1 = nterm expr ()
+   $2 = token SS ()
+   $3 = nterm expressplus ()
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 15 21 13 18 24 30 36 56 48
+Entering state 63
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 85
+Reducing stack by rule 45 (line 70):
+   $1 = token OCB ()
+   $2 = nterm expressplus ()
+   $3 = token CCB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 13 18 24 30 36 56
+Entering state 81
+Reading a token:         
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 102
+Reducing stack by rule 15 (line 34):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = token CB ()
+   $4 = token COL ()
+   $5 = token TYPE ()
+   $6 = token OCB ()
+   $7 = nterm expr ()
+   $8 = token CCB ()
+-> $$ = nterm feature ()
+Stack now 0 1 6 10 16 22 15 21
+Entering state 15
+Reading a token: Next token is token SS ()
+Shifting token SS ()
+Entering state 21
+Reading a token:     
+   
+Next token is token ID ()
+Shifting token ID ()
+Entering state 13
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 18
+Reading a token: Next token is token CB ()
+Shifting token CB ()
+Entering state 24
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 30
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 36
+Reading a token: Next token is token OCB ()
+Shifting token OCB ()
+Entering state 56
+Reading a token:        
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token DOT ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 13 18 24 30 36 56
+Entering state 81
+Next token is token DOT ()
+Shifting token DOT ()
+Entering state 77
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 98
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 113
+Reading a token: Next token is token CB ()
+Shifting token CB ()
+Entering state 125
+Reducing stack by rule 51 (line 76):
+   $1 = nterm expr ()
+   $2 = token DOT ()
+   $3 = token ID ()
+   $4 = token OB ()
+   $5 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 13 18 24 30 36 56
+Entering state 81
+Reading a token:         
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 102
+Reducing stack by rule 15 (line 34):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = token CB ()
+   $4 = token COL ()
+   $5 = token TYPE ()
+   $6 = token OCB ()
+   $7 = nterm expr ()
+   $8 = token CCB ()
+-> $$ = nterm feature ()
+Stack now 0 1 6 10 16 22 15 21 15 21
+Entering state 15
+Reading a token: Next token is token SS ()
+Shifting token SS ()
+Entering state 21
+Reading a token:     
+   
+Next token is token ID ()
+Shifting token ID ()
+Entering state 13
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 18
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 25
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 31
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 37
+Reducing stack by rule 17 (line 37):
+   $1 = token ID ()
+   $2 = token COL ()
+   $3 = token TYPE ()
+-> $$ = nterm formal ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 13 18
+Entering state 26
+Reading a token: Next token is token CB ()
+Reducing stack by rule 8 (line 22):
+-> $$ = nterm formals ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 13 18 26
+Entering state 33
+Next token is token CB ()
+Shifting token CB ()
+Entering state 39
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 58
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 82
+Reading a token: Next token is token OCB ()
+Shifting token OCB ()
+Entering state 103
+Reading a token:          
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token DOT ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 13 18 26 33 39 58 82 103
+Entering state 114
+Next token is token DOT ()
+Shifting token DOT ()
+Entering state 77
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 98
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 113
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token COMMA ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 13 18 26 33 39 58 82 103 114 77 98 113
+Entering state 126
+Next token is token COMMA ()
+Shifting token COMMA ()
+Entering state 110
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 13 18 26 33 39 58 82 103 114 77 98 113 126 110
+Entering state 122
+Reading a token: Next token is token CB ()
+Reducing stack by rule 10 (line 25):
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 13 18 26 33 39 58 82 103 114 77 98 113 126 110 122
+Entering state 133
+Reducing stack by rule 9 (line 24):
+   $1 = token COMMA ()
+   $2 = nterm expr ()
+   $3 = nterm exprs ()
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 13 18 26 33 39 58 82 103 114 77 98 113 126
+Entering state 135
+Next token is token CB ()
+Shifting token CB ()
+Entering state 143
+Reducing stack by rule 50 (line 75):
+   $1 = nterm expr ()
+   $2 = token DOT ()
+   $3 = token ID ()
+   $4 = token OB ()
+   $5 = nterm expr ()
+   $6 = nterm exprs ()
+   $7 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 13 18 26 33 39 58 82 103
+Entering state 114
+Reading a token:          
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 127
+Reducing stack by rule 14 (line 33):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm formal ()
+   $4 = nterm formals ()
+   $5 = token CB ()
+   $6 = token COL ()
+   $7 = token TYPE ()
+   $8 = token OCB ()
+   $9 = nterm expr ()
+   $10 = token CCB ()
+-> $$ = nterm feature ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21
+Entering state 15
+Reading a token: Next token is token SS ()
+Shifting token SS ()
+Entering state 21
+Reading a token:     
+   
+Next token is token ID ()
+Shifting token ID ()
+Entering state 13
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 18
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 25
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 31
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 37
+Reducing stack by rule 17 (line 37):
+   $1 = token ID ()
+   $2 = token COL ()
+   $3 = token TYPE ()
+-> $$ = nterm formal ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18
+Entering state 26
+Reading a token: Next token is token CB ()
+Reducing stack by rule 8 (line 22):
+-> $$ = nterm formals ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26
+Entering state 33
+Next token is token CB ()
+Shifting token CB ()
+Entering state 39
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 58
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 82
+Reading a token: Next token is token OCB ()
+Shifting token OCB ()
+Entering state 103
+Reading a token:          
+Next token is token IF ()
+Shifting token IF ()
+Entering state 49
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token EQ ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49
+Entering state 65
+Next token is token EQ ()
+Shifting token EQ ()
+Entering state 72
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 72
+Entering state 93
+Reading a token: Next token is token THEN ()
+Reducing stack by rule 32 (line 57):
+   $1 = nterm expr ()
+   $2 = token EQ ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49
+Entering state 65
+Next token is token THEN ()
+Shifting token THEN ()
+Entering state 87
+Reading a token:             
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 70
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 70
+Reading a token: Next token is token CB ()
+Shifting token CB ()
+Entering state 90
+Reducing stack by rule 54 (line 79):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 54 70
+Entering state 91
+Reading a token: Next token is token SUB ()
+Shifting token SUB ()
+Entering state 78
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 54 70 91 78
+Entering state 99
+Reading a token: Next token is token CB ()
+Reducing stack by rule 38 (line 63):
+   $1 = nterm expr ()
+   $2 = token SUB ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 54 70
+Entering state 91
+Next token is token CB ()
+Reducing stack by rule 10 (line 25):
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 54 70 91
+Entering state 111
+Next token is token CB ()
+Shifting token CB ()
+Entering state 123
+Reducing stack by rule 53 (line 78):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm expr ()
+   $4 = nterm exprs ()
+   $5 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87
+Entering state 106
+Reading a token:               
+Next token is token ELSE ()
+Shifting token ELSE ()
+Entering state 118
+Reading a token:         
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 70
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token SUB ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 106 118 54 70
+Entering state 91
+Next token is token SUB ()
+Shifting token SUB ()
+Entering state 78
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 106 118 54 70 91 78
+Entering state 99
+Reading a token: Next token is token CB ()
+Reducing stack by rule 38 (line 63):
+   $1 = nterm expr ()
+   $2 = token SUB ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 106 118 54 70
+Entering state 91
+Next token is token CB ()
+Reducing stack by rule 10 (line 25):
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 106 118 54 70 91
+Entering state 111
+Next token is token CB ()
+Shifting token CB ()
+Entering state 123
+Reducing stack by rule 53 (line 78):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm expr ()
+   $4 = nterm exprs ()
+   $5 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 106 118
+Entering state 131
+Reading a token:               
+Next token is token FI ()
+Shifting token FI ()
+Entering state 139
+Reducing stack by rule 47 (line 72):
+   $1 = token IF ()
+   $2 = nterm expr ()
+   $3 = token THEN ()
+   $4 = nterm expr ()
+   $5 = token ELSE ()
+   $6 = nterm expr ()
+   $7 = token FI ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103
+Entering state 114
+Reading a token:         
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 127
+Reducing stack by rule 14 (line 33):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm formal ()
+   $4 = nterm formals ()
+   $5 = token CB ()
+   $6 = token COL ()
+   $7 = token TYPE ()
+   $8 = token OCB ()
+   $9 = nterm expr ()
+   $10 = token CCB ()
+-> $$ = nterm feature ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21
+Entering state 15
+Reading a token: Next token is token SS ()
+Shifting token SS ()
+Entering state 21
+Reading a token:     
+   
+Next token is token ID ()
+Shifting token ID ()
+Entering state 13
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 18
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 25
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 31
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 37
+Reducing stack by rule 17 (line 37):
+   $1 = token ID ()
+   $2 = token COL ()
+   $3 = token TYPE ()
+-> $$ = nterm formal ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18
+Entering state 26
+Reading a token: Next token is token CB ()
+Reducing stack by rule 8 (line 22):
+-> $$ = nterm formals ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26
+Entering state 33
+Next token is token CB ()
+Shifting token CB ()
+Entering state 39
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 58
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 82
+Reading a token: Next token is token OCB ()
+Shifting token OCB ()
+Entering state 103
+Reading a token:          
+Next token is token IF ()
+Shifting token IF ()
+Entering state 49
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token EQ ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49
+Entering state 65
+Next token is token EQ ()
+Shifting token EQ ()
+Entering state 72
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 70
+Reading a token: Next token is token CB ()
+Shifting token CB ()
+Entering state 90
+Reducing stack by rule 54 (line 79):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 72
+Entering state 93
+Reading a token: Next token is token SUB ()
+Shifting token SUB ()
+Entering state 78
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 72 93 78
+Entering state 99
+Reading a token: Next token is token THEN ()
+Reducing stack by rule 38 (line 63):
+   $1 = nterm expr ()
+   $2 = token SUB ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 72
+Entering state 93
+Next token is token THEN ()
+Reducing stack by rule 32 (line 57):
+   $1 = nterm expr ()
+   $2 = token EQ ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49
+Entering state 65
+Next token is token THEN ()
+Shifting token THEN ()
+Entering state 87
+Reading a token:               
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 70
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 54 70
+Entering state 91
+Reading a token: Next token is token CB ()
+Reducing stack by rule 10 (line 25):
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 54 70 91
+Entering state 111
+Next token is token CB ()
+Shifting token CB ()
+Entering state 123
+Reducing stack by rule 53 (line 78):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm expr ()
+   $4 = nterm exprs ()
+   $5 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87
+Entering state 106
+Reading a token:             
+Next token is token ELSE ()
+Shifting token ELSE ()
+Entering state 118
+Reading a token:         
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 70
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token ADD ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 106 118 54 70
+Entering state 91
+Next token is token ADD ()
+Shifting token ADD ()
+Entering state 79
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 106 118 54 70 91 79
+Entering state 100
+Reading a token: Next token is token CB ()
+Reducing stack by rule 39 (line 64):
+   $1 = nterm expr ()
+   $2 = token ADD ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 106 118 54 70
+Entering state 91
+Next token is token CB ()
+Reducing stack by rule 10 (line 25):
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 106 118 54 70 91
+Entering state 111
+Next token is token CB ()
+Shifting token CB ()
+Entering state 123
+Reducing stack by rule 53 (line 78):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm expr ()
+   $4 = nterm exprs ()
+   $5 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 106 118
+Entering state 131
+Reading a token:               
+Next token is token FI ()
+Shifting token FI ()
+Entering state 139
+Reducing stack by rule 47 (line 72):
+   $1 = token IF ()
+   $2 = nterm expr ()
+   $3 = token THEN ()
+   $4 = nterm expr ()
+   $5 = token ELSE ()
+   $6 = nterm expr ()
+   $7 = token FI ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103
+Entering state 114
+Reading a token:         
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 127
+Reducing stack by rule 14 (line 33):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm formal ()
+   $4 = nterm formals ()
+   $5 = token CB ()
+   $6 = token COL ()
+   $7 = token TYPE ()
+   $8 = token OCB ()
+   $9 = nterm expr ()
+   $10 = token CCB ()
+-> $$ = nterm feature ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21
+Entering state 15
+Reading a token: Next token is token SS ()
+Shifting token SS ()
+Entering state 21
+Reading a token:     
+   
+Next token is token ID ()
+Shifting token ID ()
+Entering state 13
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 18
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 25
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 31
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 37
+Reducing stack by rule 17 (line 37):
+   $1 = token ID ()
+   $2 = token COL ()
+   $3 = token TYPE ()
+-> $$ = nterm formal ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18
+Entering state 26
+Reading a token: Next token is token CB ()
+Reducing stack by rule 8 (line 22):
+-> $$ = nterm formals ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26
+Entering state 33
+Next token is token CB ()
+Shifting token CB ()
+Entering state 39
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 58
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 82
+Reading a token: Next token is token OCB ()
+Shifting token OCB ()
+Entering state 103
+Reading a token:          
+Next token is token IF ()
+Shifting token IF ()
+Entering state 49
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 44
+Reading a token: Next token is token IF ()
+Shifting token IF ()
+Entering state 49
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 70
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token CB ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 49 54 70
+Entering state 91
+Next token is token CB ()
+Reducing stack by rule 10 (line 25):
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 49 54 70 91
+Entering state 111
+Next token is token CB ()
+Shifting token CB ()
+Entering state 123
+Reducing stack by rule 53 (line 78):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm expr ()
+   $4 = nterm exprs ()
+   $5 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 49
+Entering state 65
+Reading a token: Next token is token EQ ()
+Shifting token EQ ()
+Entering state 72
+Reading a token: Next token is token STRING ()
+Shifting token STRING ()
+Entering state 42
+Reducing stack by rule 27 (line 52):
+   $1 = token STRING ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 49 65 72
+Entering state 93
+Reading a token: Next token is token THEN ()
+Reducing stack by rule 32 (line 57):
+   $1 = nterm expr ()
+   $2 = token EQ ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 49
+Entering state 65
+Next token is token THEN ()
+Shifting token THEN ()
+Entering state 87
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 49 65 87
+Entering state 106
+Reading a token: Next token is token ELSE ()
+Shifting token ELSE ()
+Entering state 118
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 49 65 87 106 118
+Entering state 131
+Reading a token: Next token is token FI ()
+Shifting token FI ()
+Entering state 139
+Reducing stack by rule 47 (line 72):
+   $1 = token IF ()
+   $2 = nterm expr ()
+   $3 = token THEN ()
+   $4 = nterm expr ()
+   $5 = token ELSE ()
+   $6 = nterm expr ()
+   $7 = token FI ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44
+Entering state 59
+Reading a token:                  
+Next token is token ADD ()
+Shifting token ADD ()
+Entering state 79
+Reading a token: Next token is token IF ()
+Shifting token IF ()
+Entering state 49
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 70
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token CB ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 49 54 70
+Entering state 91
+Next token is token CB ()
+Reducing stack by rule 10 (line 25):
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 49 54 70 91
+Entering state 111
+Next token is token CB ()
+Shifting token CB ()
+Entering state 123
+Reducing stack by rule 53 (line 78):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm expr ()
+   $4 = nterm exprs ()
+   $5 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 49
+Entering state 65
+Reading a token: Next token is token EQ ()
+Shifting token EQ ()
+Entering state 72
+Reading a token: Next token is token STRING ()
+Shifting token STRING ()
+Entering state 42
+Reducing stack by rule 27 (line 52):
+   $1 = token STRING ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 49 65 72
+Entering state 93
+Reading a token: Next token is token THEN ()
+Reducing stack by rule 32 (line 57):
+   $1 = nterm expr ()
+   $2 = token EQ ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 49
+Entering state 65
+Next token is token THEN ()
+Shifting token THEN ()
+Entering state 87
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 49 65 87
+Entering state 106
+Reading a token: Next token is token ELSE ()
+Shifting token ELSE ()
+Entering state 118
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 49 65 87 106 118
+Entering state 131
+Reading a token: Next token is token FI ()
+Shifting token FI ()
+Entering state 139
+Reducing stack by rule 47 (line 72):
+   $1 = token IF ()
+   $2 = nterm expr ()
+   $3 = token THEN ()
+   $4 = nterm expr ()
+   $5 = token ELSE ()
+   $6 = nterm expr ()
+   $7 = token FI ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79
+Entering state 100
+Reading a token:                      
+Next token is token ADD ()
+Shifting token ADD ()
+Entering state 79
+Reading a token: Next token is token IF ()
+Shifting token IF ()
+Entering state 49
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 70
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token CB ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 100 79 49 54 70
+Entering state 91
+Next token is token CB ()
+Reducing stack by rule 10 (line 25):
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 100 79 49 54 70 91
+Entering state 111
+Next token is token CB ()
+Shifting token CB ()
+Entering state 123
+Reducing stack by rule 53 (line 78):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm expr ()
+   $4 = nterm exprs ()
+   $5 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 100 79 49
+Entering state 65
+Reading a token: Next token is token EQ ()
+Shifting token EQ ()
+Entering state 72
+Reading a token: Next token is token STRING ()
+Shifting token STRING ()
+Entering state 42
+Reducing stack by rule 27 (line 52):
+   $1 = token STRING ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 100 79 49 65 72
+Entering state 93
+Reading a token: Next token is token THEN ()
+Reducing stack by rule 32 (line 57):
+   $1 = nterm expr ()
+   $2 = token EQ ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 100 79 49
+Entering state 65
+Next token is token THEN ()
+Shifting token THEN ()
+Entering state 87
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 100 79 49 65 87
+Entering state 106
+Reading a token: Next token is token ELSE ()
+Shifting token ELSE ()
+Entering state 118
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 100 79 49 65 87 106 118
+Entering state 131
+Reading a token: Next token is token FI ()
+Shifting token FI ()
+Entering state 139
+Reducing stack by rule 47 (line 72):
+   $1 = token IF ()
+   $2 = nterm expr ()
+   $3 = token THEN ()
+   $4 = nterm expr ()
+   $5 = token ELSE ()
+   $6 = nterm expr ()
+   $7 = token FI ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 100 79
+Entering state 100
+Reading a token:                      
+Next token is token EQ ()
+Shifting token EQ ()
+Entering state 72
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 100 79 100 72
+Entering state 93
+Reading a token: Next token is token CB ()
+Reducing stack by rule 32 (line 57):
+   $1 = nterm expr ()
+   $2 = token EQ ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79 100 79
+Entering state 100
+Next token is token CB ()
+Reducing stack by rule 39 (line 64):
+   $1 = nterm expr ()
+   $2 = token ADD ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44 59 79
+Entering state 100
+Next token is token CB ()
+Reducing stack by rule 39 (line 64):
+   $1 = nterm expr ()
+   $2 = token ADD ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 44
+Entering state 59
+Next token is token CB ()
+Shifting token CB ()
+Entering state 83
+Reducing stack by rule 30 (line 55):
+   $1 = token OB ()
+   $2 = nterm expr ()
+   $3 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49
+Entering state 65
+Reading a token:              
+Next token is token THEN ()
+Shifting token THEN ()
+Entering state 87
+Reading a token:         
+Next token is token STRING ()
+Shifting token STRING ()
+Entering state 42
+Reducing stack by rule 27 (line 52):
+   $1 = token STRING ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87
+Entering state 106
+Reading a token:             
+Next token is token ELSE ()
+Shifting token ELSE ()
+Entering state 118
+Reading a token:         
+Next token is token STRING ()
+Shifting token STRING ()
+Entering state 42
+Reducing stack by rule 27 (line 52):
+   $1 = token STRING ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103 49 65 87 106 118
+Entering state 131
+Reading a token:             
+Next token is token FI ()
+Shifting token FI ()
+Entering state 139
+Reducing stack by rule 47 (line 72):
+   $1 = token IF ()
+   $2 = nterm expr ()
+   $3 = token THEN ()
+   $4 = nterm expr ()
+   $5 = token ELSE ()
+   $6 = nterm expr ()
+   $7 = token FI ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 13 18 26 33 39 58 82 103
+Entering state 114
+Reading a token:         
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 127
+Reducing stack by rule 14 (line 33):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm formal ()
+   $4 = nterm formals ()
+   $5 = token CB ()
+   $6 = token COL ()
+   $7 = token TYPE ()
+   $8 = token OCB ()
+   $9 = nterm expr ()
+   $10 = token CCB ()
+-> $$ = nterm feature ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21
+Entering state 15
+Reading a token: Next token is token SS ()
+Shifting token SS ()
+Entering state 21
+Reading a token:     
+   
+Next token is token ID ()
+Shifting token ID ()
+Entering state 13
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 18
+Reading a token: Next token is token CB ()
+Shifting token CB ()
+Entering state 24
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 30
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 36
+Reading a token: Next token is token OCB ()
+Shifting token OCB ()
+Entering state 56
+Reading a token:        
+Next token is token OB ()
+Shifting token OB ()
+Entering state 44
+Reading a token: Next token is token LET ()
+Shifting token LET ()
+Entering state 46
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 61
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 84
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 104
+Reading a token: Next token is token IN ()
+Reducing stack by rule 21 (line 42):
+-> $$ = nterm express ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104
+Entering state 117
+Next token is token IN ()
+Shifting token IN ()
+Entering state 130
+Reading a token:             
+Next token is token OB ()
+Shifting token OB ()
+Entering state 44
+Reading a token: Next token is token LET ()
+Shifting token LET ()
+Entering state 46
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 61
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 84
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 104
+Reading a token: Next token is token ASSIGN ()
+Shifting token ASSIGN ()
+Entering state 116
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token IN ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116
+Entering state 129
+Next token is token IN ()
+Reducing stack by rule 21 (line 42):
+-> $$ = nterm express ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129
+Entering state 137
+Next token is token IN ()
+Shifting token IN ()
+Entering state 145
+Reading a token:              [] 
+Next token is token OB ()
+Shifting token OB ()
+Entering state 44
+Reading a token: Next token is token LET ()
+Shifting token LET ()
+Entering state 46
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 61
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 84
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 104
+Reading a token: Next token is token IN ()
+Reducing stack by rule 21 (line 42):
+-> $$ = nterm express ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104
+Entering state 117
+Next token is token IN ()
+Shifting token IN ()
+Entering state 130
+Reading a token:             
+Next token is token OCB ()
+Shifting token OCB ()
+Entering state 48
+Reading a token:             
+Next token is token WHILE ()
+Shifting token WHILE ()
+Entering state 50
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token LT ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50
+Entering state 66
+Next token is token LT ()
+Shifting token LT ()
+Entering state 74
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token LOOP ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 74
+Entering state 95
+Next token is token LOOP ()
+Reducing stack by rule 34 (line 59):
+   $1 = nterm expr ()
+   $2 = token LT ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50
+Entering state 66
+Next token is token LOOP ()
+Shifting token LOOP ()
+Entering state 88
+Reading a token:                     
+Next token is token OCB ()
+Shifting token OCB ()
+Entering state 48
+Reading a token:                     
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token ASSIGN ()
+Shifting token ASSIGN ()
+Entering state 71
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token DOT ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 54 71
+Entering state 92
+Next token is token DOT ()
+Shifting token DOT ()
+Entering state 77
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 98
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 113
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token OB ()
+Shifting token OB ()
+Entering state 70
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token CB ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 54 71 92 77 98 113 54 70
+Entering state 91
+Next token is token CB ()
+Reducing stack by rule 10 (line 25):
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 54 71 92 77 98 113 54 70 91
+Entering state 111
+Next token is token CB ()
+Shifting token CB ()
+Entering state 123
+Reducing stack by rule 53 (line 78):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = nterm expr ()
+   $4 = nterm exprs ()
+   $5 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 54 71 92 77 98 113
+Entering state 126
+Reading a token: Next token is token CB ()
+Reducing stack by rule 10 (line 25):
+-> $$ = nterm exprs ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 54 71 92 77 98 113 126
+Entering state 135
+Next token is token CB ()
+Shifting token CB ()
+Entering state 143
+Reducing stack by rule 50 (line 75):
+   $1 = nterm expr ()
+   $2 = token DOT ()
+   $3 = token ID ()
+   $4 = token OB ()
+   $5 = nterm expr ()
+   $6 = nterm exprs ()
+   $7 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 54 71
+Entering state 92
+Reading a token: Next token is token SS ()
+Reducing stack by rule 48 (line 73):
+   $1 = token ID ()
+   $2 = token ASSIGN ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48
+Entering state 64
+Next token is token SS ()
+Shifting token SS ()
+Entering state 86
+Reading a token:                           
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token ASSIGN ()
+Shifting token ASSIGN ()
+Entering state 71
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token ADD ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 64 86 54 71
+Entering state 92
+Next token is token ADD ()
+Shifting token ADD ()
+Entering state 79
+Reading a token: Next token is token INTEGER ()
+Shifting token INTEGER ()
+Entering state 43
+Reducing stack by rule 28 (line 53):
+   $1 = token INTEGER ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 64 86 54 71 92 79
+Entering state 100
+Reading a token: Next token is token SS ()
+Reducing stack by rule 39 (line 64):
+   $1 = nterm expr ()
+   $2 = token ADD ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 64 86 54 71
+Entering state 92
+Next token is token SS ()
+Reducing stack by rule 48 (line 73):
+   $1 = token ID ()
+   $2 = token ASSIGN ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 64 86
+Entering state 64
+Next token is token SS ()
+Shifting token SS ()
+Entering state 86
+Reading a token:                             
+Next token is token CCB ()
+Reducing stack by rule 19 (line 40):
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 64 86 64 86
+Entering state 105
+Reducing stack by rule 18 (line 40):
+   $1 = nterm expr ()
+   $2 = token SS ()
+   $3 = nterm expressplus ()
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48 64 86
+Entering state 105
+Reducing stack by rule 18 (line 40):
+   $1 = nterm expr ()
+   $2 = token SS ()
+   $3 = nterm expressplus ()
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88 48
+Entering state 63
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 85
+Reducing stack by rule 45 (line 70):
+   $1 = token OCB ()
+   $2 = nterm expressplus ()
+   $3 = token CCB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 50 66 88
+Entering state 107
+Reading a token:                     
+Next token is token POOL ()
+Shifting token POOL ()
+Entering state 119
+Reducing stack by rule 46 (line 71):
+   $1 = token WHILE ()
+   $2 = nterm expr ()
+   $3 = token LOOP ()
+   $4 = nterm expr ()
+   $5 = token POOL ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48
+Entering state 64
+Reading a token: Next token is token SS ()
+Shifting token SS ()
+Entering state 86
+Reading a token:                 
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token ASSIGN ()
+Shifting token ASSIGN ()
+Entering state 71
+Reading a token: Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token SS ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 64 86 54 71
+Entering state 92
+Next token is token SS ()
+Reducing stack by rule 48 (line 73):
+   $1 = token ID ()
+   $2 = token ASSIGN ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 64 86
+Entering state 64
+Next token is token SS ()
+Shifting token SS ()
+Entering state 86
+Reading a token:                   
+Next token is token ID ()
+Shifting token ID ()
+Entering state 54
+Reading a token: Next token is token SS ()
+Reducing stack by rule 29 (line 54):
+   $1 = token ID ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 64 86 64 86
+Entering state 64
+Next token is token SS ()
+Shifting token SS ()
+Entering state 86
+Reading a token:                 
+Next token is token CCB ()
+Reducing stack by rule 19 (line 40):
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 64 86 64 86 64 86
+Entering state 105
+Reducing stack by rule 18 (line 40):
+   $1 = nterm expr ()
+   $2 = token SS ()
+   $3 = nterm expressplus ()
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 64 86 64 86
+Entering state 105
+Reducing stack by rule 18 (line 40):
+   $1 = nterm expr ()
+   $2 = token SS ()
+   $3 = nterm expressplus ()
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48 64 86
+Entering state 105
+Reducing stack by rule 18 (line 40):
+   $1 = nterm expr ()
+   $2 = token SS ()
+   $3 = nterm expressplus ()
+-> $$ = nterm expressplus ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130 48
+Entering state 63
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 85
+Reducing stack by rule 45 (line 70):
+   $1 = token OCB ()
+   $2 = nterm expressplus ()
+   $3 = token CCB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44 46 61 84 104 117 130
+Entering state 138
+Reading a token:             
+Next token is token CB ()
+Reducing stack by rule 44 (line 69):
+   $1 = token LET ()
+   $2 = token ID ()
+   $3 = token COL ()
+   $4 = token TYPE ()
+   $5 = nterm express ()
+   $6 = token IN ()
+   $7 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145 44
+Entering state 59
+Next token is token CB ()
+Shifting token CB ()
+Entering state 83
+Reducing stack by rule 30 (line 55):
+   $1 = token OB ()
+   $2 = nterm expr ()
+   $3 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44 46 61 84 104 116 129 137 145
+Entering state 149
+Reading a token: Next token is token CB ()
+Reducing stack by rule 43 (line 68):
+   $1 = token LET ()
+   $2 = token ID ()
+   $3 = token COL ()
+   $4 = token TYPE ()
+   $5 = token ASSIGN ()
+   $6 = nterm expr ()
+   $7 = nterm express ()
+   $8 = token IN ()
+   $9 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130 44
+Entering state 59
+Next token is token CB ()
+Shifting token CB ()
+Entering state 83
+Reducing stack by rule 30 (line 55):
+   $1 = token OB ()
+   $2 = nterm expr ()
+   $3 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44 46 61 84 104 117 130
+Entering state 138
+Reading a token: Next token is token CB ()
+Reducing stack by rule 44 (line 69):
+   $1 = token LET ()
+   $2 = token ID ()
+   $3 = token COL ()
+   $4 = token TYPE ()
+   $5 = nterm express ()
+   $6 = token IN ()
+   $7 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56 44
+Entering state 59
+Next token is token CB ()
+Shifting token CB ()
+Entering state 83
+Reducing stack by rule 30 (line 55):
+   $1 = token OB ()
+   $2 = nterm expr ()
+   $3 = token CB ()
+-> $$ = nterm expr ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 13 18 24 30 36 56
+Entering state 81
+Reading a token:           
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 102
+Reducing stack by rule 15 (line 34):
+   $1 = token ID ()
+   $2 = token OB ()
+   $3 = token CB ()
+   $4 = token COL ()
+   $5 = token TYPE ()
+   $6 = token OCB ()
+   $7 = nterm expr ()
+   $8 = token CCB ()
+-> $$ = nterm feature ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21
+Entering state 15
+Reading a token: Next token is token SS ()
+Shifting token SS ()
+Entering state 21
+Reading a token:     
+Next token is token CCB ()
+Reducing stack by rule 3 (line 14):
+-> $$ = nterm features ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21 15 21
+Entering state 28
+Reducing stack by rule 2 (line 13):
+   $1 = nterm feature ()
+   $2 = token SS ()
+   $3 = nterm features ()
+-> $$ = nterm features ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21 15 21
+Entering state 28
+Reducing stack by rule 2 (line 13):
+   $1 = nterm feature ()
+   $2 = token SS ()
+   $3 = nterm features ()
+-> $$ = nterm features ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21 15 21
+Entering state 28
+Reducing stack by rule 2 (line 13):
+   $1 = nterm feature ()
+   $2 = token SS ()
+   $3 = nterm features ()
+-> $$ = nterm features ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21 15 21
+Entering state 28
+Reducing stack by rule 2 (line 13):
+   $1 = nterm feature ()
+   $2 = token SS ()
+   $3 = nterm features ()
+-> $$ = nterm features ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21 15 21
+Entering state 28
+Reducing stack by rule 2 (line 13):
+   $1 = nterm feature ()
+   $2 = token SS ()
+   $3 = nterm features ()
+-> $$ = nterm features ()
+Stack now 0 1 6 10 16 22 15 21 15 21 15 21
+Entering state 28
+Reducing stack by rule 2 (line 13):
+   $1 = nterm feature ()
+   $2 = token SS ()
+   $3 = nterm features ()
+-> $$ = nterm features ()
+Stack now 0 1 6 10 16 22 15 21 15 21
+Entering state 28
+Reducing stack by rule 2 (line 13):
+   $1 = nterm feature ()
+   $2 = token SS ()
+   $3 = nterm features ()
+-> $$ = nterm features ()
+Stack now 0 1 6 10 16 22 15 21
+Entering state 28
+Reducing stack by rule 2 (line 13):
+   $1 = nterm feature ()
+   $2 = token SS ()
+   $3 = nterm features ()
+-> $$ = nterm features ()
+Stack now 0 1 6 10 16 22
+Entering state 29
+Next token is token CCB ()
+Shifting token CCB ()
+Entering state 35
+Reducing stack by rule 12 (line 29):
+   $1 = token CLASS ()
+   $2 = token TYPE ()
+   $3 = token INHERITS ()
+   $4 = token TYPE ()
+   $5 = token OCB ()
+   $6 = nterm features ()
+   $7 = token CCB ()
+-> $$ = nterm class ()
+Stack now 0
+Entering state 5
+Reading a token: Next token is token SS ()
+Shifting token SS ()
+Entering state 8
+Reading a token: 
+
+Next token is token CLASS ()
+Shifting token CLASS ()
+Entering state 1
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 6
+Reading a token: Next token is token OCB ()
+Shifting token OCB ()
+Entering state 9
+Reading a token:   
+Next token is token ID ()
+Shifting token ID ()
+Entering state 13
+Reading a token: Next token is token COL ()
+Shifting token COL ()
+Entering state 19
+Reading a token: Next token is token TYPE ()
+Shifting token TYPE ()
+Entering state 27
+Reading a token: Next token is token SS ()
+      invalid expression
+Error: popping token TYPE ()
+Stack now 0 5 8 1 6 9 13 19
+Error: popping token COL ()
+Stack now 0 5 8 1 6 9 13
+Error: popping token ID ()
+Stack now 0 5 8 1 6 9
+Error: popping token OCB ()
+Stack now 0 5 8 1 6
+Error: popping token TYPE ()
+Stack now 0 5 8 1
+Error: popping token CLASS ()
+Stack now 0 5 8
+Error: popping token SS ()
+Stack now 0 5
+Error: popping nterm class ()
+Stack now 0
+Cleanup: discarding lookahead token SS ()
+Stack now 0
+ problem yeh hai---> syntax error

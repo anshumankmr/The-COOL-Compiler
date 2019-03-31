@@ -6,7 +6,20 @@
 	extern FILE *yyin;
 %}
    
-%token TRUE FALSE STRING INTEGER OB CB NOT EQ LET LTE LT COMP DIV OCB CCB SS COMMA COL ASSIGN AT DOT IF THEN ELSE FI WHILE LOOP POOL IN CASE OF TYPEOF ESAC NEW ISVOID SUB ADD MUL CLASS INHERITS TYPE ID
+%token TRUE FALSE STRING INTEGER OB CB NOT EQ LET LTE LT COMP OCB CCB SS COMMA COL ASSIGN AT DOT IF THEN ELSE FI WHILE LOOP POOL IN CASE OF TYPEOF ESAC NEW ISVOID CLASS INHERITS TYPE ID ADD SUB MUL DIV
+
+%right ASSIGN
+%precedence NOT
+%nonassoc LT EQ LE
+%left ADD SUB
+%left MUL DIV
+%precedence ISVOID
+%precedence COMP
+%precedence AT
+%precedence DOT
+%nonassoc THEN
+%nonassoc ELSE
+
 
 %% 
 stmt : program;
@@ -92,7 +105,7 @@ void main()
 	#ifdef YYDEBUG
 		yydebug = 1;
 	#endif
-	yyin=fopen("SampleInput.txt", "r");
+	yyin=fopen("primes.cl", "r");
 	do 
 	{
 	 if(yyparse())

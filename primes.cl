@@ -1,6 +1,5 @@
-
-(*
- * methodless-primes.cl
+--yeh comment udega
+(* * methodless-primes.cl
  *
  * Designed by Jesse H. Willett, jhw@cory, 11103234, with 
  *             Istvan Siposs, isiposs@cory, 12342921.
@@ -21,8 +20,7 @@
  * could be passed to the subroutine, and it could only return itself.
  * but returning itself would be useless since we couldn't call methods
  * and the only operators we have are for Int and Bool, which do nothing
- * interesting when we initialize them!
- *)
+ * interesting when we initialize them! *)
 
 class Main inherits IO {
 
