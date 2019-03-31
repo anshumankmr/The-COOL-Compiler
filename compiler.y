@@ -83,7 +83,7 @@ expr : TRUE
 
 int yyerror(char *msg)
 {
-	printf("invalid expression\n problem yeh hai---> %s", msg);
+	printf("Invalid Expression: The issue is this ---> %s", msg);
 	return 1; 
 }
 
