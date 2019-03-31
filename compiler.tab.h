@@ -34,7 +34,7 @@
 # define YY_YY_COMPILER_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
-# define YYDEBUG 1
+# define YYDEBUG 0
 #endif
 #if YYDEBUG
 extern int yydebug;
@@ -86,7 +86,8 @@ extern int yydebug;
     CLASS = 296,
     INHERITS = 297,
     TYPE = 298,
-    ID = 299
+    ID = 299,
+    DoT = 300
   };
 #endif
 
