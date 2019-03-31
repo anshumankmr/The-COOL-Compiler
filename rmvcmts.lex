@@ -10,7 +10,6 @@
 
 %%
 "--".* {};					
-[(][*][^*]*[*]+([^*/][^*]*[*]+)*[)] {};
 %%
 
 int yywrap()
@@ -21,7 +20,7 @@ return 1;
 int main()
 {
 yyin=fopen("primes.cl","r");
-yyout=fopen("yehdekh.txt","w");
+yyout=fopen("nosinglelinecomments.txt","w");
 yylex();
 return 0;
 }
