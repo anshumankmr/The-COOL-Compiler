@@ -1,6 +1,8 @@
-# Project Title
+# The COOL Compiler
 
-The COOL Compiler
+Compiler that performs Lexical and Syntactical Analysis for the language COOL, used at Stanford's course on Compiler.
+More about it can be found in the Cool Manual and [here](https://lagunita.stanford.edu/courses/Engineering/Compilers/Fall2014/about).
+This is part of our VIth semester CSE Project.
 
 ## Getting Started
 
