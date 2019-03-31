@@ -12,23 +12,15 @@ Need Bison and Flex PreInstalled
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Follow these steps
 ```
 chmod + exec.sh
 ./exec.sh
 ```
 ### Read the Output on the Terminal. If it says Sucess, then it is sucessfully compiled
 
-
-
 ```
 ./out
-
-
-
-
-
-
 class A {
 
    var : Int <- 0;
@@ -162,21 +154,6 @@ class E inherits D {
    };
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class A2I {
 
      c2i(char : String) : Int {
@@ -458,3 +435,6 @@ Success
 
 ### Modify The Input to rmvcmts.l to try different test cases
 
+### Contributors 
+Anmol Nanchahal, https://github.com/Anmol156
+Aditya Bharadwaj, https://github.com/adityabharadwaj198
